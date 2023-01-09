@@ -94,18 +94,19 @@
                     </view>
                     <connections>
                         <outlet property="foodName" destination="Ri8-Sw-7wF" id="nMe-p2-HgI"/>
+                        <segue destination="CBm-gg-0Q5" kind="presentation" identifier="goToSecond" id="arU-Rh-mEs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="67.633928571428569"/>
+            <point key="canvasLocation" x="-236" y="-22"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="yGq-Hv-Rxn">
             <objects>
                 <viewController id="CBm-gg-0Q5" customClass="SecondViewController" customModule="RandomFoodChoice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="SecondView" id="pwR-wM-UE4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to new " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lf-8z-17O">
@@ -131,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U2c-lt-Fqo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10" y="777"/>
+            <point key="canvasLocation" x="522" y="-22"/>
         </scene>
     </scenes>
     <resources>

@@ -35,11 +35,14 @@ class ViewController: UIViewController {
     @IBAction func addFoodBtn(_ sender: UIButton) {
      
     
-        let secondVC = SecondViewController()
+        /* let secondVC = SecondViewController()
     
         //self.present(showSecondVC, animated: true, completion: nil)
         self.present(secondVC, animated: true, completion: nil)
-    }
+    세그웨이 방식 안됨 이유 찾는중 */
+        
+        self.performSegue(withIdentifier: "goToSecond", sender: self)
+         }
 
 }
 
