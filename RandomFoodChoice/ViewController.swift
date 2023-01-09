@@ -11,6 +11,7 @@ class ViewController: UIViewController {
     let FoodArray = ["김치찌개","마라탕","쌀국수","금촌","돈까스","육회비빔밥","마라샹궈","떡볶이"]
     
     @IBOutlet var foodName: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -32,8 +33,11 @@ class ViewController: UIViewController {
     
     
     @IBAction func addFoodBtn(_ sender: UIButton) {
-        
-    let secondVC = SecondView()
+     
+    
+        let secondVC = SecondViewController()
+    
+        //self.present(showSecondVC, animated: true, completion: nil)
         self.present(secondVC, animated: true, completion: nil)
     }
 

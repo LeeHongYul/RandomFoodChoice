@@ -7,9 +7,9 @@
 
 import UIKit
 
-class SecondView: UIViewController{
+class SecondViewController: UIViewController{
     
-    @IBOutlet var foodName: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

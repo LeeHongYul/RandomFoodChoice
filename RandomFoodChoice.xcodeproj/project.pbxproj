@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5DCAEA63296C36D8006E944D /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCAEA62296C36D8006E944D /* SecondView.swift */; };
+		5DCAEA63296C36D8006E944D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCAEA62296C36D8006E944D /* SecondViewController.swift */; };
 		5DD01347296413D10027A023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD01346296413D10027A023 /* AppDelegate.swift */; };
 		5DD01349296413D10027A023 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD01348296413D10027A023 /* SceneDelegate.swift */; };
 		5DD0134B296413D10027A023 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD0134A296413D10027A023 /* ViewController.swift */; };
@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5DCAEA62296C36D8006E944D /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		5DCAEA62296C36D8006E944D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		5DD01343296413D10027A023 /* RandomFoodChoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomFoodChoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD01346296413D10027A023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DD01348296413D10027A023 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 			children = (
 				5DD01346296413D10027A023 /* AppDelegate.swift */,
 				5DD01348296413D10027A023 /* SceneDelegate.swift */,
-				5DCAEA62296C36D8006E944D /* SecondView.swift */,
+				5DCAEA62296C36D8006E944D /* SecondViewController.swift */,
 				5DD0134A296413D10027A023 /* ViewController.swift */,
 				5DD0135A296418E20027A023 /* btnDetail.swift */,
 				5DD0135C2964236F0027A023 /* LabelDetail.swift */,
@@ -147,7 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DCAEA63296C36D8006E944D /* SecondView.swift in Sources */,
+				5DCAEA63296C36D8006E944D /* SecondViewController.swift in Sources */,
 				5DD0134B296413D10027A023 /* ViewController.swift in Sources */,
 				5DD0135B296418E20027A023 /* btnDetail.swift in Sources */,
 				5DD01347296413D10027A023 /* AppDelegate.swift in Sources */,

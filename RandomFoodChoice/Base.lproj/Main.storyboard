@@ -100,17 +100,20 @@
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="67.633928571428569"/>
         </scene>
-        <!--Second View-->
+        <!--Second View Controller-->
         <scene sceneID="yGq-Hv-Rxn">
             <objects>
-                <viewController id="CBm-gg-0Q5" customClass="SecondView" customModule="RandomFoodChoice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CBm-gg-0Q5" customClass="SecondViewController" customModule="RandomFoodChoice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="SecondView" id="pwR-wM-UE4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to new " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lf-8z-17O">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to new " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lf-8z-17O">
                                 <rect key="frame" x="155" y="351" width="131" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Kdy-Ja-0bF"/>
+                                    <constraint firstAttribute="width" constant="131" id="Ybb-aG-GmC"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -118,6 +121,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DRn-3K-OBW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DRn-3K-OBW" firstAttribute="bottom" secondItem="7lf-8z-17O" secondAttribute="bottom" constant="490" id="1Eg-Hg-2ms"/>
+                            <constraint firstItem="7lf-8z-17O" firstAttribute="leading" secondItem="DRn-3K-OBW" secondAttribute="leading" constant="155" id="5BO-Mj-dOU"/>
+                            <constraint firstItem="7lf-8z-17O" firstAttribute="top" secondItem="DRn-3K-OBW" secondAttribute="top" constant="307" id="hga-mM-Gwq"/>
+                            <constraint firstItem="DRn-3K-OBW" firstAttribute="trailing" secondItem="7lf-8z-17O" secondAttribute="trailing" constant="128" id="moX-rZ-L1o"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U2c-lt-Fqo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
