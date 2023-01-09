@@ -59,14 +59,37 @@
                                     <action selector="foodBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="py0-V0-GDP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bII-IB-dFh" customClass="btnDetail" customModule="RandomFoodChoice" customModuleProvider="target">
+                                <rect key="frame" x="120" y="669" width="165" height="74"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="NUX-mG-HW7"/>
+                                    <constraint firstAttribute="height" constant="74" id="XNq-3Y-fH5"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addFoodBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X7x-HT-HGv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="61r-W0-JC1" firstAttribute="top" secondItem="Ri8-Sw-7wF" secondAttribute="bottom" constant="248" id="FmC-tv-1w6"/>
                             <constraint firstItem="Ri8-Sw-7wF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="137" id="PDP-TV-1iF"/>
+                            <constraint firstItem="bII-IB-dFh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="Vh9-rB-qXS"/>
                             <constraint firstItem="Ri8-Sw-7wF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gQT-Bb-Trg"/>
                             <constraint firstItem="61r-W0-JC1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="idE-zi-N37"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bII-IB-dFh" secondAttribute="bottom" constant="119" id="q5L-eD-1bI"/>
                         </constraints>
                     </view>
                     <connections>
@@ -76,6 +99,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="67.633928571428569"/>
+        </scene>
+        <!--Second View-->
+        <scene sceneID="yGq-Hv-Rxn">
+            <objects>
+                <viewController id="CBm-gg-0Q5" customClass="SecondView" customModule="RandomFoodChoice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="SecondView" id="pwR-wM-UE4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to new " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lf-8z-17O">
+                                <rect key="frame" x="155" y="351" width="131" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DRn-3K-OBW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U2c-lt-Fqo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="777"/>
         </scene>
     </scenes>
     <resources>

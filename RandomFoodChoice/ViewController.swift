@@ -27,5 +27,15 @@ class ViewController: UIViewController {
     
         foodName.text = FoodArray.randomElement()
     }
+    
+    
+    
+    
+    @IBAction func addFoodBtn(_ sender: UIButton) {
+        
+    let secondVC = SecondView()
+        self.present(secondVC, animated: true, completion: nil)
+    }
+
 }
 
