@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let FoodArray = ["김치찌개","마라탕","쌀국수","금촌","돈까스","육회비빔밥","마라샹궈","떡볶이"]
+    var FoodArray = ["김치찌개","마라탕","쌀국수","금촌","돈까스","육회비빔밥","마라샹궈","떡볶이"]
     
     @IBOutlet var foodName: UILabel!
     

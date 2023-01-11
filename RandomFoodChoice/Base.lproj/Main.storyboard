@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RandomFoodChoice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ri8-Sw-7wF" customClass="LabelDetail" customModule="RandomFoodChoice" customModuleProvider="target">
@@ -60,7 +60,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bII-IB-dFh" customClass="btnDetail" customModule="RandomFoodChoice" customModuleProvider="target">
-                                <rect key="frame" x="120" y="669" width="165" height="74"/>
+                                <rect key="frame" x="120" y="649" width="165" height="74"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="165" id="NUX-mG-HW7"/>
@@ -92,6 +92,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bII-IB-dFh" secondAttribute="bottom" constant="119" id="q5L-eD-1bI"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="jPB-28-j7t"/>
                     <connections>
                         <outlet property="foodName" destination="Ri8-Sw-7wF" id="nMe-p2-HgI"/>
                         <segue destination="CBm-gg-0Q5" kind="presentation" identifier="goToSecond" modalPresentationStyle="fullScreen" id="arU-Rh-mEs"/>
@@ -140,6 +141,30 @@
                                     <action selector="AddingBtn:" destination="CBm-gg-0Q5" eventType="touchUpInside" id="Epb-Mj-ACe"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBb-em-dpz" customClass="btnDetail" customModule="RandomFoodChoice" customModuleProvider="target">
+                                <rect key="frame" x="128" y="673" width="165" height="74"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="3Qw-sa-RZn"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="74" id="G09-9O-4v0"/>
+                                    <constraint firstAttribute="height" constant="74" id="GcM-nh-BHx"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="165" id="wbh-MZ-xqd"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addFoodBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7xO-7O-rc1"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="fvi-dy-3yz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DRn-3K-OBW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -148,10 +173,12 @@
                             <constraint firstItem="7lf-8z-17O" firstAttribute="leading" secondItem="DRn-3K-OBW" secondAttribute="leading" constant="155" id="5BO-Mj-dOU"/>
                             <constraint firstItem="fKt-pT-6zp" firstAttribute="top" secondItem="Riw-y5-Kkl" secondAttribute="bottom" constant="18" id="6rU-MP-SZL"/>
                             <constraint firstItem="Riw-y5-Kkl" firstAttribute="leading" secondItem="DRn-3K-OBW" secondAttribute="leading" constant="46" id="GHB-Kh-A08"/>
+                            <constraint firstItem="iBb-em-dpz" firstAttribute="leading" secondItem="DRn-3K-OBW" secondAttribute="leading" constant="128" id="RpT-kc-24h"/>
                             <constraint firstItem="fKt-pT-6zp" firstAttribute="leading" secondItem="DRn-3K-OBW" secondAttribute="leading" constant="177" id="XmA-wI-FuE"/>
                             <constraint firstItem="Riw-y5-Kkl" firstAttribute="top" secondItem="DRn-3K-OBW" secondAttribute="top" constant="86" id="byN-UL-dks"/>
                             <constraint firstItem="7lf-8z-17O" firstAttribute="top" secondItem="DRn-3K-OBW" secondAttribute="top" constant="307" id="hga-mM-Gwq"/>
                             <constraint firstItem="DRn-3K-OBW" firstAttribute="trailing" secondItem="7lf-8z-17O" secondAttribute="trailing" constant="128" id="moX-rZ-L1o"/>
+                            <constraint firstItem="DRn-3K-OBW" firstAttribute="bottom" secondItem="iBb-em-dpz" secondAttribute="bottom" constant="115" id="yji-VQ-cay"/>
                         </constraints>
                     </view>
                     <connections>

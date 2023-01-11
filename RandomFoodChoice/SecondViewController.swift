@@ -9,7 +9,7 @@ import UIKit
 
 class SecondViewController: UIViewController, UITextFieldDelegate{
     
-    
+    var FoodArray = ["김치찌개","마라탕","쌀국수","금촌","돈까스","육회비빔밥","마라샹궈","떡볶이"]
     @IBOutlet var AddFoodTextField: UITextField!
     
     
@@ -24,6 +24,7 @@ class SecondViewController: UIViewController, UITextFieldDelegate{
         
         
         print(AddFoodTextField.text!)
+        FoodArray.append(AddFoodTextField.text!)
         AddFoodTextField.endEditing(true)
     }
     //버튼으로 입력
